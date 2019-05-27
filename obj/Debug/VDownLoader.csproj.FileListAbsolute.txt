@@ -1,0 +1,17 @@
+D:\WPF\VDownLoader\bin\Debug\VDownLoader.exe.config
+D:\WPF\VDownLoader\bin\Debug\VDownLoader.exe
+D:\WPF\VDownLoader\bin\Debug\VDownLoader.pdb
+D:\WPF\VDownLoader\obj\Debug\App.g.cs
+D:\WPF\VDownLoader\obj\Debug\VDownLoader_MarkupCompile.cache
+D:\WPF\VDownLoader\obj\Debug\VDownLoader_MarkupCompile.lref
+D:\WPF\VDownLoader\obj\Debug\VDownLoader.g.resources
+D:\WPF\VDownLoader\obj\Debug\VDownLoader.Properties.Resources.resources
+D:\WPF\VDownLoader\obj\Debug\VDownLoader.csproj.GenerateResource.cache
+D:\WPF\VDownLoader\obj\Debug\VDownLoader.csproj.CoreCompileInputs.cache
+D:\WPF\VDownLoader\obj\Debug\VDownLoader.exe
+D:\WPF\VDownLoader\obj\Debug\VDownLoader.pdb
+D:\WPF\VDownLoader\obj\Debug\Views\MainWindow.g.cs
+D:\WPF\VDownLoader\obj\Debug\Views\MainWindow.baml
+D:\WPF\VDownLoader\obj\Debug\VDownLoader.csprojAssemblyReference.cache
+D:\WPF\VDownLoader\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\WPF\VDownLoader\obj\Debug\App.baml

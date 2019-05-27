@@ -1,0 +1,31 @@
+﻿<Window x:Class="VDownLoader.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Background="BlueViolet"  Content="Video Downloader" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40"/>
+        <Label Content="Video Format:" HorizontalAlignment="Left" Margin="45,44,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ComboBoxFormat" SelectedItem="{Binding Source={StaticResource viewModelProvider}, Path=SelectedFormat}" ItemsSource="{Binding Source={StaticResource viewModelProvider}, Path=Formats}" HorizontalAlignment="Left" Margin="135,44,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" />
+        <Label Content="Video URL:" HorizontalAlignment="Left" Margin="45,84,0,0" Grid.Row="1" VerticalAlignment="Top" Width="85"/>
+        <TextBox Text="{Binding Source={StaticResource viewModelProvider}, Path=Url}" HorizontalAlignment="Left" Height="23" Margin="135,84,0,0" Grid.Row="1" VerticalAlignment="Top" Width="540"/>
+        <Label Content="Save to:" HorizontalAlignment="Left" Margin="45,129,0,0" Grid.Row="1" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="DownloadPath" Text="{Binding Source={StaticResource viewModelProvider}, Path=DownloadPath}" HorizontalAlignment="Left" Height="23" Margin="135,129,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="391"/>
+        <Button Content="Browser" Command="{Binding Source={StaticResource viewModelProvider}, Path=SetDownloadPath}" CommandParameter="{Binding ElementName=DownloadPath, Path=Text}" HorizontalAlignment="Left" Margin="531,129,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="26"/>
+        <Button Content="Open" Command="{Binding Source={StaticResource viewModelProvider}, Path=OpenExplorer}" CommandParameter="{Binding ElementName=DownloadPath, Path=Text}" HorizontalAlignment="Left" Margin="609,129,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="26"/>
+        <Label Content="Status" HorizontalAlignment="Left" Margin="45,195,0,0" Grid.Row="1" VerticalAlignment="Top" Width="85"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="135,195,0,0" Grid.Row="1" VerticalAlignment="Top" Width="252"/>
+        <Label Content="Progress" HorizontalAlignment="Left" Margin="45,237,0,0" Grid.Row="1" VerticalAlignment="Top" Width="57"/>
+        <ProgressBar HorizontalAlignment="Left" Height="26" Margin="122,237,0,0" Grid.Row="1" VerticalAlignment="Top" Width="432"/>
+        <Button Command="{Binding Source={StaticResource viewModelProvider}, Path=DownloadVideo}" CommandParameter="{Binding ElementName=ComboBoxFormat, Path=SelectedItem}" Content="Download" HorizontalAlignment="Left" Margin="569,237,0,0" Grid.Row="1" VerticalAlignment="Top" Width="106" Height="26"/>
+    </Grid>
+</Window>
